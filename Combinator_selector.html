@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator class</title>
+</head>
+<body>
+    <style>
+        /* div+p{
+            background-color: yellow;
+        } */
+
+        /* div ~ p{
+            background-color: yellow;
+        } */
+
+        /* div > p{
+            background-color: yellow;
+        } */
+
+        div  p{
+            background-color: yellow;
+        }
+    </style>
+
+
+
+    <p>Content 0</p>
+    <div>
+        <p>Content 1</p>
+        <p>Content 2</p>
+        <section>
+            <p>Content 7</p>
+            <p>Content 8</p>
+        </section>
+    </div>
+    <p>Hello mấy cưng</p>
+
+
+    <h2>Content tag h2</h2>
+    <p>Content 3</p>
+    <p>Content 4</p>
+
+
+
+    <!-- <style>
+    .menu-type-one {
+      display: flex;
+      list-style: none;
+    }
+
+    .menu-type-one li {
+      margin: 0 10px;
+      position: relative;
+    }
+
+    .menu-type-one > li > a {
+      color: red!important;
+    }
+
+    .menu-type-one li a {
+      color: #9b5e02;
+    }
+
+    .menu-type-two li a {
+      color: red;
+    }
+
+    .menu-type-one li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 0;
+      width: 100px;
+    }
+
+    .menu-type-one li ul {
+      display: none;
+    }
+
+    .menu-type-one li:hover ul {
+      display: block;
+    }
+  </style>
+
+  <ul class="menu-type-one">
+    <li>
+      <a href="#">Mục 1</a>
+    </li>
+    <li>
+      <a href="#">
+        Mục 2
+      </a>
+      <ul>
+        <li>
+          <a href="#">Mục 2 - 1</a>
+        </li>
+        <li>
+          <a href="#">Mục 2 - 2</a>
+        </li>
+        <li>
+          <a href="#">Mục 2 - 3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Mục 3</a>
+    </li>
+  </ul> -->
+
+
+
+  <style>
+    /* .menu li:first-child a{
+        color: #f3154c ;
+    }
+    
+    .menu li:last-child a{
+        color: #0cb6e6 ;
+    } */
+    .menu li:nth-child(2n) a{
+        color: #0cb6e6 ;
+    }
+
+    .menu li a{
+        color: aquamarine;
+    }
+  </style>
+
+  <ul class="menu">
+    <li><a href="#">Mục 1</a></li>
+    <li><a href="#">Mục 2</a></li>
+    <li><a href="#">Mục 3</a></li>
+    <li><a href="#">Mục 4</a></li>
+    <li><a href="#">Mục 5</a></li>
+    <li><a href="#">Mục 6</a></li>
+  </ul>
+
+
+  <style>
+    .table{
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+    }
+
+    .table th, .table td{
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .table th{
+        background-color: orange;
+    }
+
+    .table_even tbody tr:nth-child(even) td{
+        background-color: #ededed;
+    }
+  </style>
+
+  <table class="table table_even">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Le Van A</td>
+            <td>LVA@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Le Van b</td>
+            <td>LVB@gmail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Le Van c</td>
+            <td>LVC@gmail.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Le Van D</td>
+            <td>LVD@gmail.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Le Van E</td>
+            <td>LVE@gmail.com</td>
+        </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

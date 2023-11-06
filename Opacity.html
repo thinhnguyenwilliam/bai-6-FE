@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+</head>
+<body>
+    <style>
+        .box{
+            background-color: orange;
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .box_2{
+            background-color: #0000004c; /*background opacity*/
+            color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            /* opacity: 0.2; */
+        }
+    </style>
+
+
+    <div class="box">
+        Content...
+
+        <div class="box_2">
+            Content box 2
+        </div>
+    </div>
+
+</body>
+</html>

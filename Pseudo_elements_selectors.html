@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements selectors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        .menu{
+            list-style-type: none;
+        }
+
+        /* .menu li::before{
+            content: "- *****@@## - ";
+        }
+
+        .menu li::after{
+            content: " %%%%%%";
+        } */
+
+        .menu li::before{
+            content: "\f3f7";
+            font-family: "Font Awesome 6 Brands";
+            font-weight: 400;
+        }
+    </style>    
+
+    <!-- <ul class="menu">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+
+    <style>
+        .text_1::first-letter{
+            font-size: 40px;
+        }
+
+        .text_2::first-line{
+            text-transform: uppercase;
+            color: blue;
+        }
+    </style>
+    <p class="text_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fuga asperiores aperiam officia est officiis voluptatum deleniti natus soluta doloribus ab autem ex impedit magnam, saepe ipsum distinctio non vel!</p>
+    <p class="text_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero sed, praesentium quos nesciunt ex sapiente, delectus voluptatum enim, omnis aut saepe eaque fugiat doloremque deleniti. Molestias similique numquam eveniet!</p> -->
+
+
+    <style>
+        .menu_1 li::marker{
+            color: rebeccapurple;
+            font-size: 50px;
+        }
+    </style>
+    <ul class="menu_1">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+
+    <style>
+        .text_selection::selection{
+            background-color: green;
+            color: red;
+        }
+    </style>
+    <p class="text_selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem sunt incidunt vero eveniet, explicabo impedit dolores ipsum eius magni quae, debitis saepe aliquid natus facere itaque. Quam, commodi dolores?</p>
+
+</body>
+</html>
